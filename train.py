@@ -25,3 +25,12 @@ print(f"Accuracy: {accuracy * 100:.2f}%")
 # Save the model
 import joblib
 joblib.dump(clf, 'gesture_classifier.pkl')
+
+# n_estimators: The number of trees in the forest. 
+#     A larger number generally improves accuracy but increases computation time.
+# random_state: seed for the random number generator to ensure repetability
+# max_depth: The maximum depth of each tree. Limiting depth helps control overfitting.
+# min_samples_split: The minimum number of samples required to split a node.
+# max_features: The number of features to consider when looking for 
+#       the best split. Lower values reduce correlation between trees.
+# bootstrap: Whether to use bootstrapped samples when building trees.
